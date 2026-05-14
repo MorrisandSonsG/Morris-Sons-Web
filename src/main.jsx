@@ -201,7 +201,22 @@ function App() {
           </div>
           <p className="service-area">⌖ Brisbane, Ipswich, Logan, Gold Coast & wider South East Queensland</p>
         </div>
-        <form className="contact-form" onSubmit={(event) => event.preventDefault()}>
+        <form
+  className="contact-form"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+>
+  <input
+    type="hidden"
+    name="access_key"
+    value="20936dfa-08fd-4e0f-8d5a-c30033448636"
+  />
+
+  <input
+    type="hidden"
+    name="subject"
+    value="New Website Enquiry - Morris & Sons Group"
+  />
           <input placeholder="Name" />
           <input placeholder="Company" />
           <input placeholder="Email / Phone" />
