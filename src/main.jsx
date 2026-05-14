@@ -61,15 +61,18 @@ function App() {
   return (
     <main>
       <header className="site-header">
-        <a href="#home" className="brand" aria-label="Morris & Sons Group home">
-          <img src="/images/logo.png" alt="Morris & Sons Group" />
-        </a>
-        <nav>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
+        <nav className="left-nav">
+          <a href="#services">Services</a> 
+          <a href="#about">About</a> 
           <a href="#contact">Contact</a>
-        </nav>
-        <a className="quote-button" href="#contact">Request a Quote</a>
+       
+       <a href="#home" className="brand center-brand" aria-label="Morris & Sons Group home"> 
+         <img src="/images/logo.png" alt="Morris & Sons Group" />
+         </a>
+          
+        <a className="quote-button" href="#contact">
+          Request a Quote
+          </a>
       </header>
 
       <section id="home" className="hero">
