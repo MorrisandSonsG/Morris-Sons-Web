@@ -35,9 +35,21 @@ button, input, select, textarea { font: inherit; }
 }
 
 .brand img {
-  height: 95px;
+  height: 160px;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.18));
 }
+.left-nav { 
+  display: flex; gap: 34px; 
+  align-items: 
+  center; 
+} 
+
+.center-brand { 
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
 .site-header nav { display: flex; gap: 34px; align-items: center; }
 .site-header nav a {
   color: rgba(0, 0, 0, 0.74);
