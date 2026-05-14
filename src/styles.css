@@ -93,7 +93,7 @@ button, input, select, textarea { font: inherit; }
   transition: opacity 1.2s ease, transform 5s ease;
 }
 .hero-slide.active { opacity: 1; transform: scale(1.12); }
-.hero-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.70); }
+.hero-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.35); }
 .hero-glow {
   position: absolute;
   inset: 0;
