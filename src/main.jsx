@@ -16,12 +16,42 @@ const heroImages = [
 ];
 
 const services = [
-  ['Asphalt Works', 'Roads, car parks, subdivisions, patches and commercial asphalt works.'],
-  ['Crew Hire', 'Experienced asphalt crews for day works, night works and project support.'],
-  ['Labour Hire', 'Skilled asphalt labourers, operators, supervisors and all-rounders.'],
-  ['Plant Support', 'Dry hire and project support options for bobcat, trucks and asphalt gear.'],
-  ['Civil Prep', 'Prep works, profiling support, remedial works, reinstatement and maintenance.'],
-  ['Site Delivery', 'Hands-on supervision, safe work practices and clean finishes.']
+ {
+    title: 'Asphalt Works',
+    short: 'Potholes, Patches, Driveways, Car Parks, Subdivisions, Roads, Commercial Asphalt work ',
+    detail:
+      'Morris & Sons is experienced and equipped to assist with asphalt works from small pothole repairs through to major tier-one project support. Our team has worked across a wide range of asphalt environments and understands what it takes to deliver safely, efficiently and to a clean finish.'
+  },
+  {
+    title: 'Crew Hire',
+    short: 'Experienced asphalt crews for day works, night works and project support.',
+    detail:
+      'Our crew hire service supports major asphalt contractors and larger asphalt operations, including tier-one project environments. We provide experienced, reliable crews who understand production, quality, safety and the pressure of live asphalt works.'
+  },
+  {
+    title: 'Labour Hire',
+    short: 'Skilled asphalt labourers, operators, supervisors and all-rounders.',
+    detail:
+      'We supply asphalt personnel across the full range of site roles, from labourers and plant operators through to foremen and supervisors. Our people can step in to support or manage works, helping clients keep projects moving while they focus on other priorities.'
+  },
+  {
+    title: 'Plant Support',
+    short: 'Wet hire and project support options for asphalt and civil works.',
+    detail:
+      'We offer wet hire plant support with experienced operators for asphalt and civil works. This helps clients access practical plant support without needing to manage dry hire, operator allocation or site coordination separately.'
+  },
+  {
+    title: 'Civil Prep',
+    short: 'Prep works, remedial works, reinstatement and maintenance.',
+    detail:
+      'We can assist with civil preparation works required before asphalt placement, including remedial preparation, reinstatement support, clean-up, trimming and general civil works to help prepare the site properly.'
+  },
+  {
+    title: 'Line Marking & Spray Seal',
+    short: 'Additional support services for asphalt and civil projects.',
+    detail:
+      'Morris & Sons can also assist with line marking and spray seal requirements, helping clients access a broader asphalt and civil support package through one reliable team.'
+  }  
 ];
 
 const directors = [
