@@ -34,7 +34,10 @@ button, input, select, textarea { font: inherit; }
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
 }
 
-.brand img { height: 58px; display: block; }
+.brand img {
+  height: 95px;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.18));
+}
 .site-header nav { display: flex; gap: 34px; align-items: center; }
 .site-header nav a {
   color: rgba(0, 0, 0, 0.74);
