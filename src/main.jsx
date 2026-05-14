@@ -143,14 +143,14 @@ function App() {
           <div><strong>Family</strong><span>Owned and operated</span></div>
         </div>
         <div className="service-grid">
-          {services.map(([title, text], index) => (
+         {services.map((service, index) => (
             <article className="service-card" key={title}>
               <div className="service-image" style={{ backgroundImage: `url(${heroImages[index % heroImages.length]})` }}>
                 <span>{String(index + 1).padStart(2, '0')}</span>
               </div>
               <div className="service-content">
-                <h2>{title}</h2>
-                <p>{text}</p>
+                <h2>{service.title}</h2>
+                <p>{service.short}</p>
               </div>
             </article>
           ))}
