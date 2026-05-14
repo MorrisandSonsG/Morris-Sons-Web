@@ -65,8 +65,13 @@ function App() {
           <a href="#services">Services</a> 
           <a href="#about">About</a> 
           <a href="#contact">Contact</a>
+         </nav>
        
-       <a href="#home" className="brand center-brand" aria-label="Morris & Sons Group home"> 
+       <a 
+         href="#home" 
+         className="brand center-brand" 
+         aria-label="Morris & Sons Group home"
+        > 
          <img src="/images/logo.png" alt="Morris & Sons Group" />
          </a>
           
