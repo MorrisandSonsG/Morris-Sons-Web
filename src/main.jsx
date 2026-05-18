@@ -105,25 +105,22 @@ function App() {
           <p>Our Services</p>
           <h1>Complete asphalt & civil solutions</h1>
         </div>
-        <div className="stats-row">
-          <div><strong>16+</strong><span>Years industry experience</span></div>
-          <div><strong>SEQ</strong><span>Servicing South East QLD</span></div>
-          <div><strong>24/7</strong><span>Day & night works</span></div>
-          <div><strong>Family</strong><span>Owned and operated</span></div>
-        </div>
         <div className="service-grid">
-         {services.map((service, index) => (
-            <article className="service-card" key={title}>
-              <div className="service-image" style={{ backgroundImage: `url(${heroImages[index % heroImages.length]})` }}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-              </div>
-              <div className="service-content">
-                <h2>{service.title}</h2>
-                <p>{service.short}</p>
-              </div>
-            </article>
-          ))}
-        </div>
+  {services.map(([title, text], index) => (
+    <article className="service-card" key={title}>
+      <div
+        className="service-image"
+        style={{ backgroundImage: `url(${heroImages[index % heroImages.length]})` }}
+      >
+        <span>{String(index + 1).padStart(2, '0')}</span>
+      </div>
+      <div className="service-content">
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
+    </article>
+  ))}
+</div>
       </section>
 
       <section id="about" className="section about-section">
