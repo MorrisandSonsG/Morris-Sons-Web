@@ -84,9 +84,12 @@ function App() {
           <div
             key={image}
             className={`hero-slide ${index === current ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${image})` }}
-          />
-        ))}
+            style={{
+  backgroundImage:
+    title === 'Crew Hire'
+      ? "url('/images/crew-hire.jpeg')"
+      : `url(${heroImages[index % heroImages.length]})`
+}}
         <div className="hero-overlay" />
         <div className="hero-glow" />
         <div className="hero-content">
