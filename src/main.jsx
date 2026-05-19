@@ -117,7 +117,7 @@ function App() {
         className="service-image"
        style={{
   backgroundImage:
-    title === 'crew hire'
+    title === 'Crew Hire'
       ? "url('/images/crew-hire.png')"
       : `url(${heroImages[index % heroImages.length]})`
 }} 
