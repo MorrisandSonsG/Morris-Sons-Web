@@ -79,31 +79,33 @@ function App() {
           </a>
       </header>
 
-      <section id="home" className="hero">
-        {heroImages.map((image, index) => (
-          <div
-            key={image}
-            className={`hero-slide ${index === current ? 'active' : ''}`}
-            style={{
-  backgroundImage:
-    title === 'Crew Hire'
-      ? "url('/images/crew-hire.jpeg')"
-      : `url(${heroImages[index % heroImages.length]})`
-}}
-        <div className="hero-overlay" />
-        <div className="hero-glow" />
-        <div className="hero-content">
-          <img className="hero-logo" src="/images/logo.png" alt="Morris & Sons Group" />
-          <div className="social-links">
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
-          </div>
-        </div>
-        <a href="#services" className="scroll-down" aria-label="Scroll to services">⌄</a>
-      </section>
+     <section id="home" className="hero">
+  {heroImages.map((image, index) => (
+    <div
+      key={image}
+      className={`hero-slide ${index === current ? 'active' : ''}`}
+      style={{ backgroundImage: `url(${image})` }}
+    />
+  ))}
 
-      <section id="services" className="section dark-section">
+  <div className="hero-overlay" />
+  <div className="hero-glow" />
+
+  <div className="hero-content">
+    <img className="hero-logo" src="/images/logo.png" alt="Morris & Sons Group" />
+
+    <div className="social-links">
+      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
+    </div>
+  </div>
+
+  <a href="#services" className="scroll-down" aria-label="Scroll to services">
+    ⌄
+  </a>
+</section>
+        <section id="services" className="section dark-section">
         <div className="section-heading center">
           <p>Our Services</p>
           <h1>Complete asphalt & civil solutions</h1>
@@ -113,7 +115,12 @@ function App() {
     <article className="service-card" key={title}>
       <div
         className="service-image"
-        style={{ backgroundImage: `url(${heroImages[index % heroImages.length]})` }}
+       style={{
+  backgroundImage:
+    title === 'Crew Hire'
+      ? "url('/images/crew-hire.jpeg')"
+      : `url(${heroImages[index % heroImages.length]})`
+}} 
       >
         <span>{String(index + 1).padStart(2, '0')}</span>
       </div>
@@ -141,7 +148,7 @@ function App() {
       <section className="section why-section">
         <div className="section-heading center">
           <p>Why Morris & Sons</p>
-          <h1>Reliable asphalt support without the corporate runaround.</h1>
+          <h1>Reliable Asphalt support without the corporate runaround.</h1>
         </div>
         <p className="why-copy">We keep things simple — experienced crews, clear communication and quality outcomes. Whether it’s labour hire, full crew support or asphalt works, we focus on being easy to deal with, turning up prepared and delivering work we’re proud to put our name on.</p>
         <div className="pill-row">
