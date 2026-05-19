@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const heroImages = [
-  '/images/crew hire.png', 
+  '/images/Crew Hire.png', 
   '/images/IMG_1532.jpeg',
   '/images/IMG_1530.jpeg',
   '/images/IMG_1524.jpeg',
