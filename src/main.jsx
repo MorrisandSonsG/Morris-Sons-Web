@@ -119,7 +119,7 @@ function App() {
        style={{
   backgroundImage:
     title === 'Crew Hire'
-      ? "url('/images/crew hire.png')"
+      ? "url('/images/crew-hire.png')"
       : `url(${heroImages[index % heroImages.length]})`
 }} 
       >
