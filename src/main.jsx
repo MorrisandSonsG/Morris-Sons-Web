@@ -122,6 +122,8 @@ function App() {
       ? "url('/images/crew-hire.png')"
        : title === 'Labour Hire'
       ? "url('/images/Crew-5.png')"
+      : title === 'Asphalt Works'
+      ? "url('/images/Asphalt-works.jpg')"
       : `url(${heroImages[index % heroImages.length]})`
 }} 
       >
