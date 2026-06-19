@@ -29,22 +29,22 @@ const directors = [
     name: 'Michael Folefau',
     title: 'Director / Operations & Client Services',
     email: 'Michael@Morrisandsonsgroup.com.au',
-    phone: '0428 041 410',
-    tel: '0428041410'
+    phone: '0476 996 032',
+    tel: '0476996032'
   },
   {
     name: 'Malo Folefau',
     title: 'Director / Commercial & Project Delivery',
     email: 'Malo@Morrisandsonsgroup.com.au',
-    phone: '0477 013 306',
-    tel: '0477013306'
+    phone: '0474 812 329',
+    tel: '0474812329'
   },
   {
     name: 'Bjorn Folefau',
     title: 'Director / Compliance & WHS',
     email: 'Bjorn@Morrisandsonsgroup.com.au',
-    phone: '0435 950 661',
-    tel: '0435950661'
+    phone: '0407 912 711',
+    tel: '0407912711'
   }
 ];
 
